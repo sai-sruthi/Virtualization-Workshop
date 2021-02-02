@@ -40,7 +40,7 @@ async function up(force)
     console.log(chalk.keyword('pink')(`Bringing up machine ${name}`));
 
     // We will use the image we've pulled down with bakerx.
-    let image = path.join(os.homedir(), '.bakerx', '.persist', 'images', 'bionic', 'box.ovf');
+    let image = path.join(os.homedir(), '.bakerx', '.persist', 'images', 'focal', 'box.ovf');
     if( !fs.existsSync(image) )
     {
         console.log(chalk.red(`Could not find ${image}. Please download with 'bakerx pull cloud-images.ubuntu.com bionic'.`))
