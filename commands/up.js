@@ -43,7 +43,7 @@ async function up(force)
     let image = path.join(os.homedir(), '.bakerx', '.persist', 'images', 'focal', 'box.ovf');
     if( !fs.existsSync(image) )
     {
-        console.log(chalk.red(`Could not find ${image}. Please download with 'bakerx pull cloud-images.ubuntu.com bionic'.`))
+        console.log(chalk.red(`Could not find ${image}. Please download with 'bakerx pull ${image} cloud-images.ubuntu.com'.`))
     }
 
     // We check if we already started machine, or have a previous failed build.
