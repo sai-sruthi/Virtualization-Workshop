@@ -98,11 +98,14 @@ async function up(force)
 async function customize(name)
 {
     console.log(chalk.keyword('pink')(`Running VM customizations...`));
+    await VBoxManage.execute("modifyvm", `"${name}" --nic1 NAT`);
+    await VBoxManage.execute("modifyvm", `"${name}" --natpf1 "guestssh,tcp,,2800,,22"`);
+    await VBoxManage.execute("modifyvm", `"${name}" --natpf1 "nodeport,tcp,,9000,,5001"`);
 }
 
 async function postconfiguration(name)
 {
     console.log(chalk.keyword('pink')(`Running post-configurations...`));
-     
-    ssh("ls /");
+    
+    ssh("'ls / ; curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - ;  sudo apt install -y nodejs ; sudo apt-get update ; sudo apt-get install git ;sudo apt-get install net-tools; sudo npm install npm ; git clone https://github.com/CSC-DevOps/App ; cd App ; sudo npm install ;' ");
 }
