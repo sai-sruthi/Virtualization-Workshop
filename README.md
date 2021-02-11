@@ -8,31 +8,73 @@
 
 * [ ] Discussion: Describe a situation where it was difficult to run code from someone else
 
-<img src="resources_imgs/classActivity.png">
+    <img src="resources_imgs/classActivity.png">
 
-I joined the us-east-1 channel at 2:00 pm on Tuesday(02/02/2021) and discussed about the above topics. 
+    I joined the us-east-1 channel at 2:00 pm on Tuesday(02/02/2021) and discussed about the above topics. 
 
 * [ ] Complete "On your own": Ubuntu up script (10)
 
-The code for the Ubuntu up script is checked into the respository. Below are the screen shots of App running on localhost and after port forward. 
+    The code for the Ubuntu up script is checked into the respository. Below are the screen shots of App running on localhost and after port forward. 
 
-![lh](resources_imgs/LocalhostBrowser.png)
- 
-![pf](resources_imgs/PortForward.png)
+    ![lh](resources_imgs/LocalhostBrowser.png)
+    
+    ![pf](resources_imgs/PortForward.png)
 
 * [ ] Complete the [CLI notebook](https://docable.cloud/chrisparnin/notebooks/nodejs/CLI/cli.md) 
 
-Find the sucess output of the code snippets in the notebook below. The code for cli.js can be found checked into the repository. 
+    Find the sucess output of the code snippets in the notebook below. The code for cli.js can be found checked into the repository. 
 
-![cli1](resources_imgs/CLI1.png)
- 
-![cli2](resources_imgs/CLI2.png)
+    ![cli1](resources_imgs/CLI1.png)
+    
+    ![cli2](resources_imgs/CLI2.png)
 
-![cli3](resources_imgs/CLI3.png)
+    ![cli3](resources_imgs/CLI3.png)
 
-![cli4](resources_imgs/CLI4.png)
+    ![cli4](resources_imgs/CLI4.png)
 
 * [ ] Complete "Docker workshop" 
+
+    * Creating the directory structure for the rootfs, downloading the busybox distribution, installing symlinks inside the rootfs, test running of container.
+   
+    ![docker1](resources_imgs/docker1.png) 
+
+    * Starting an interactive shell in the container.
+
+    ![docker2](resources_imgs/docker2.png) 
+
+    * Creating a container.sh file, to create a new snapshot of the filesystem everytime is it launched in order to run the container.
+
+    ![docker3](resources_imgs/docker3.png) 
+
+    * Installing docer in VM, verifying can run docker
+
+    ![docker4](resources_imgs/docker4.png)  
+
+    * Checking size of the images
+
+    ![docker5](resources_imgs/docker5.png)   
+
+    * Creating a simple container.
+
+    ![docker6](resources_imgs/docker6.png)   
+
+    *  Building the docker image, and name it "java11"
+
+    ![docker7](resources_imgs/docker7.png)   
+
+    * Looking at all the containers 
+
+    ![docker8](resources_imgs/docker8.png)   
+
+    * Running in daemon mode and commiting to image
+
+    ![docker9](resources_imgs/docker9.png)       
+
+    * Using Volumes to share filesystem. 
+
+    ![docker10](resources_imgs/docker10.png)   
+
+    ![docker11](resources_imgs/docker11.png)   
 
 ### Answer the following conceptual questions 
 
@@ -69,4 +111,4 @@ The code for the customization of the VM is available in ssh.js file.
 
 * Below is the link demonstrating running of code to provision the VM (`v up`), running my customization and post-configuration steps, and ssh (`v ssh`) and a starting your App. It also demonstrates my app running on the browser.
 
-[Demo](https://drive.google.com/file/d/1QkqfyItlpzhnPVDum2j5j7B_j42D96Ev/view?usp=sharing)
+    [Demo](https://drive.google.com/file/d/1QkqfyItlpzhnPVDum2j5j7B_j42D96Ev/view?usp=sharing)
