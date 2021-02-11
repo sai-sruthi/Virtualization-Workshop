@@ -8,7 +8,7 @@
 
 * [ ] Discussion: Describe a situation where it was difficult to run code from someone else
 
-<img src="resources_imgs/classActivity.png" width="200" height="350">
+<img src="resources_imgs/classActivity.png">
 
 I joined the us-east-1 channel at 2:00 pm on Tuesday(02/02/2021) and discussed about the above topics. 
 
@@ -37,9 +37,14 @@ Find the sucess output of the code snippets in the notebook below. The code for 
 ### Answer the following conceptual questions 
 
 * Why can code be difficult to run on another machine? 
+
+
+
 * Explain the concepts of a computing environment and headless infrastructure.
 * Compare full emulation virtualization vs. binary translation
 * What are some use cases associated with microvms and unikernels?
+
+
 * In VM workshop, why can't the eth0 ip address be pinged from the host?
 * How can bakerx access the virtual machine through ssh?
 * What are the limitations of using chroot for os-virtualization?
@@ -64,3 +69,4 @@ The code for the customization of the VM is available in ssh.js file.
 
 * Below is the link demonstrating running of code to provision the VM (`v up`), running my customization and post-configuration steps, and ssh (`v ssh`) and a starting your App. It also demonstrates my app running on the browser.
 
+[Demo](https://drive.google.com/file/d/1QkqfyItlpzhnPVDum2j5j7B_j42D96Ev/view?usp=sharing)
