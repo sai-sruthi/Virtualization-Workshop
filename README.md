@@ -80,17 +80,35 @@
 
 * Why can code be difficult to run on another machine? 
 
-
+    We may face various problems of mixing up the environments, and run wrong commands, do not have proper libraries installed on another system, hence unable to resolve dependencies, etc. 
 
 * Explain the concepts of a computing environment and headless infrastructure.
+
+    A headless system is a computer that operates without a monitor, graphical user interface (GUI) or peripheral devices, such as keyboard and mouse, and a the computing environment involves the collection of computer machinary, data storage devices, work stations, software applications, and networks that support the processing and exchange of electronic information demanded by the software solution.  
+
 * Compare full emulation virtualization vs. binary translation
+
+
 * What are some use cases associated with microvms and unikernels?
 
 
+
+
 * In VM workshop, why can't the eth0 ip address be pinged from the host?
+
+    The issue is that the VM is connected to the network via NAT. We need to set the network adapter of the VM to a bridged connection so that the VM will get it's own IP within the actual network and not on the LAN on the host.
+
 * How can bakerx access the virtual machine through ssh?
+
+    Baker uses a configuration file (baker.yml) in the root directory of our project. Baker uses a small microkernel to host the Ansible configuration server, runc, and provide a host kernel for Baker containers.
+
 * What are the limitations of using chroot for os-virtualization?
+    
+    chroot context may not stack properly and chrooted programs with sufficient privilages may perform a second chroot to breakout. 
+
 * Why is the builder pattern useful for building images?
+
+
 
 # Virtual Machine provisioning with CLI program 
 
