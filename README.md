@@ -88,11 +88,11 @@
 
 * Compare full emulation virtualization vs. binary translation
 
-
+    Binary translation is one specific approach to implementing full virtualization that does not require hardware virtualization features. It involves examining the executable code of the virtual guest for "unsafe" instructions, translating these into "safe" equivalents, and then executing the translated code.
+    
 * What are some use cases associated with microvms and unikernels?
 
-
-
+    A popular use case of unikernels is cloud, use cases of microvm is Firecracker.
 
 * In VM workshop, why can't the eth0 ip address be pinged from the host?
 
@@ -107,8 +107,8 @@
     chroot context may not stack properly and chrooted programs with sufficient privilages may perform a second chroot to breakout. 
 
 * Why is the builder pattern useful for building images?
-
-
+    
+    A builder pattern involves using two Docker images - one to perform a build and another to ship the results of the first build without the penalty of the build-chain and tooling in the first image, helping solve the problem of pushing image to DockerHub where the size of the resulting image was quite large - at least 670mb.
 
 # Virtual Machine provisioning with CLI program 
 
