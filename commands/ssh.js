@@ -27,13 +27,13 @@ exports.handler = async argv => {
 
     (async () => {
     
-        sshvm(force);
+        ssh(force);
 
     })();
 
 };
 
-async function sshvm(force)
+async function ssh(force)
 {
     // Use current working directory to derive name of virtual machine
     let cwd = process.cwd().replace(/[/]/g,"-").replace(/\\/g,"-");
