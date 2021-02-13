@@ -123,7 +123,7 @@ The code for the customization of the VM is available in up.js file from line 10
 The code for the customization of the VM is available in up.js file in the line 110.
 
 #### SSH and App
-The code for the customization of the VM is available in ssh.js file.
+The code for performing ssh into the VM is available in ssh.js file.
 
 ## Screencast
 
